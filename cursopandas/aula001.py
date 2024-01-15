@@ -1,7 +1,4 @@
-import pandas as pd
-
-# Carregadno o dataSet que usa o separador ';'
-dataFrame = pd.read_csv("../arquivos/GasPricesinBrazil_2004-2019.csv", sep=';')
+from bases import data_frame_curso, data_frame_avaliacao, pd
 
 # Exibindo primeiras, últimas e até linhas aleatórias do dataFrame
 
@@ -9,6 +6,8 @@ dataFrame = pd.read_csv("../arquivos/GasPricesinBrazil_2004-2019.csv", sep=';')
 # print(dataFrame.tail())
 # print(dataFrame.sample(n=10))
 # print(dataFrame.loc[0]) # pegando por meio do indice
+print(data_frame_avaliacao.loc['Playstation4':, ['ruim']])
+
 # (dataFrame['ESTADO'])  # pegando uma coluna inteira
 # print(f'Testando uma coisas: {dataFrame.iloc[0]}') # mesma coisa do loc[0]
 
@@ -19,7 +18,6 @@ dataFrame = pd.read_csv("../arquivos/GasPricesinBrazil_2004-2019.csv", sep=';')
 # print(type(dataFrame))
 # print(f'O dataFrame possui o total de {dataFrame.shape[0]} linhas e {dataFrame.shape[1]} colunas')
 # print(dataFrame.columns)
-
 
 # Criando DataFrame
 
